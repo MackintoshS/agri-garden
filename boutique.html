@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique — Agri-Garden</title>
+  <meta name="description" content="Commandez et réservez vos plantes en ligne sur la boutique Agri-Garden. Arbres, vivaces, arbustes, potager et plantes d'intérieur.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-tag">Boutique en ligne</span>
+      <h1>Commandez vos plantes</h1>
+      <p>Sélectionnez vos plantes, ajoutez-les au panier et réservez-les. Retrait à la pépinière sous 48h.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Filtres -->
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="arbre">Arbres</button>
+        <button class="filter-btn" data-filter="vivace">Vivaces</button>
+        <button class="filter-btn" data-filter="potager">Potager</button>
+        <button class="filter-btn" data-filter="arbuste">Arbustes</button>
+        <button class="filter-btn" data-filter="interieur">Intérieur</button>
+        <button class="filter-btn" data-filter="bulbe">Bulbes</button>
+      </div>
+
+      <!-- Grille produits -->
+      <div class="grid-4" id="productGrid">
+
+        <div class="product-card reveal" data-category="arbre">
+          <div class="product-img">🍎</div>
+          <div class="product-body">
+            <h3>Pommier 'Gala'</h3>
+            <p>Variété productive, fruits sucrés. Idéal en jardin ou verger familial.</p>
+            <div class="price">€ 34,90</div>
+            <button class="btn btn-primary add-to-cart" data-name="Pommier 'Gala'" data-price="34.90">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-1" data-category="arbre">
+          <div class="product-img">🍒</div>
+          <div class="product-body">
+            <h3>Cerisier 'Bigarreau'</h3>
+            <p>Cerisier demi-tige, floraison spectaculaire au printemps.</p>
+            <div class="price">€ 42,00</div>
+            <button class="btn btn-primary add-to-cart" data-name="Cerisier 'Bigarreau'" data-price="42.00">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-2" data-category="vivace">
+          <div class="product-img">🌸</div>
+          <div class="product-body">
+            <h3>Lavande officinale</h3>
+            <p>Floraison juin–août, très mellifère. Résistante à la sécheresse.</p>
+            <div class="price">€ 7,50</div>
+            <button class="btn btn-primary add-to-cart" data-name="Lavande officinale" data-price="7.50">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-3" data-category="vivace">
+          <div class="product-img">🌻</div>
+          <div class="product-body">
+            <h3>Rudbeckia fulgida</h3>
+            <p>Fleurs jaunes d'été à l'automne. Parfaite pour massifs naturels.</p>
+            <div class="price">€ 8,90</div>
+            <button class="btn btn-primary add-to-cart" data-name="Rudbeckia fulgida" data-price="8.90">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-category="potager">
+          <div class="product-img">🍅</div>
+          <div class="product-body">
+            <h3>Tomate 'Marmande'</h3>
+            <p>Variété ancienne côtelée, chair ferme et goût intense.</p>
+            <div class="price">€ 3,50</div>
+            <button class="btn btn-primary add-to-cart" data-name="Tomate 'Marmande'" data-price="3.50">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-1" data-category="potager">
+          <div class="product-img">🌿</div>
+          <div class="product-body">
+            <h3>Basilic grand vert</h3>
+            <p>Aromatique incontournable pour la cuisine méditerranéenne.</p>
+            <div class="price">€ 2,90</div>
+            <button class="btn btn-primary add-to-cart" data-name="Basilic grand vert" data-price="2.90">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-2" data-category="arbuste">
+          <div class="product-img">🌿</div>
+          <div class="product-body">
+            <h3>Buis commun</h3>
+            <p>Idéal en haie taillée ou topiaire. Persistant et robuste.</p>
+            <div class="price">€ 12,00</div>
+            <button class="btn btn-primary add-to-cart" data-name="Buis commun" data-price="12.00">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-3" data-category="interieur">
+          <div class="product-img">🪴</div>
+          <div class="product-body">
+            <h3>Monstera deliciosa</h3>
+            <p>Plante tropicale emblématique. Feuilles découpées spectaculaires.</p>
+            <div class="price">€ 24,90</div>
+            <button class="btn btn-primary add-to-cart" data-name="Monstera deliciosa" data-price="24.90">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-category="bulbe">
+          <div class="product-img">🌷</div>
+          <div class="product-body">
+            <h3>Tulipes (lot de 10)</h3>
+            <p>Mélange de couleurs vives pour massifs printaniers. À planter en automne.</p>
+            <div class="price">€ 9,90</div>
+            <button class="btn btn-primary add-to-cart" data-name="Tulipes lot 10" data-price="9.90">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-1" data-category="arbuste">
+          <div class="product-img">🌺</div>
+          <div class="product-body">
+            <h3>Hortensia 'Annabelle'</h3>
+            <p>Grandes inflorescences blanches de juillet à septembre.</p>
+            <div class="price">€ 18,50</div>
+            <button class="btn btn-primary add-to-cart" data-name="Hortensia 'Annabelle'" data-price="18.50">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-2" data-category="interieur">
+          <div class="product-img">🌵</div>
+          <div class="product-body">
+            <h3>Cactus assortis (pot 12cm)</h3>
+            <p>Collection de cactées et succulentes, peu d'entretien.</p>
+            <div class="price">€ 6,90</div>
+            <button class="btn btn-primary add-to-cart" data-name="Cactus assortis" data-price="6.90">Réserver</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-3" data-category="bulbe">
+          <div class="product-img">🌼</div>
+          <div class="product-body">
+            <h3>Dahlias (lot de 3 tubercules)</h3>
+            <p>Floraison estivale abondante. Variété pompon bicolore.</p>
+            <div class="price">€ 11,90</div>
+            <button class="btn btn-primary add-to-cart" data-name="Dahlias lot 3" data-price="11.90">Réserver</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Panier sticky -->
+  <div class="cart-indicator" id="cartIndicator">
+    <div class="cart-badge" id="cartCount">0</div>
+    <span>Panier — <strong id="cartTotal">€ 0,00</strong></span>
+    <button class="btn btn-white" style="padding:8px 16px;font-size:0.85rem" id="clearCart">Vider</button>
+  </div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
