@@ -50,7 +50,6 @@ export default function Home() {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <span className="hero-tag">🌿 Pépinière Belge</span>
             <h1>La nature, au cœur de votre jardin</h1>
             <p>Découvrez notre sélection de plantes cultivées avec passion. Des essences locales aux variétés rares, pour chaque espace et chaque saison.</p>
             <div className="hero-actions">
