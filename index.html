@@ -1,135 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agri-Garden — Pépinière & Plantes en Belgique</title>
-  <meta name="description" content="Agri-Garden, votre pépinière en Belgique. Découvrez notre sélection de plantes, arbres et arbustes. Boutique en ligne et événements Chlorophylle Night.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <span class="hero-tag">🌿 Pépinière Belge</span>
-        <h1>La nature, au cœur de votre jardin</h1>
-        <p>Découvrez notre sélection de plantes cultivées avec passion. Des essences locales aux variétés rares, pour chaque espace et chaque saison.</p>
-        <div class="hero-actions">
-          <a href="pepiniere.html" class="btn btn-white">Découvrir la pépinière</a>
-          <a href="boutique.html" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.5);color:#fff">Accéder à la boutique</a>
-        </div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-visual-placeholder">
-        <svg width="200" height="200" viewBox="0 0 24 24" fill="white"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 2-8 2 1-2 4.33-4 7-4-1 4-6 7-11 7 0-.5-.05-1-.12-1.5C9.8 4.5 14.44 0 21 0c-.37 1.84-1.59 6.11-4 8z"/></svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bandeau confiance -->
-  <div class="trust-band">
-    <div class="container">
-      <div class="trust-items">
-        <div class="trust-item"><strong>+30</strong><span>Années d'expérience</span></div>
-        <div class="trust-item"><strong>+500</strong><span>Variétés disponibles</span></div>
-        <div class="trust-item"><strong>Belgique</strong><span>Cultivé localement</span></div>
-        <div class="trust-item"><strong>Conseil</strong><span>Expert à votre écoute</span></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Nouveautés -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2>Nouveautés de saison</h2>
-        <p>Découvrez les dernières arrivées dans notre pépinière, sélectionnées pour leur beauté et leur rusticité.</p>
-      </div>
-      <div class="carousel" id="nouveautesCarousel">
-        <div class="carousel-track" id="carouselTrack">
-          <div class="card reveal reveal-delay-1">
-            <div class="card-img-placeholder"><svg width="80" height="80" viewBox="0 0 24 24" fill="white"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 2-8 2 1-2 4.33-4 7-4-1 4-6 7-11 7 0-.5-.05-1-.12-1.5C9.8 4.5 14.44 0 21 0c-.37 1.84-1.59 6.11-4 8z"/></svg></div>
-            <div class="card-body">
-              <h3>Collection Printemps 2026</h3>
-              <p>Vivaces, bulbes et annuelles pour égayer vos massifs dès le retour des beaux jours.</p>
-              <a href="pepiniere.html" class="btn btn-primary">Découvrir</a>
-            </div>
-          </div>
-          <div class="card reveal reveal-delay-2">
-            <div class="card-img-placeholder"><svg width="80" height="80" viewBox="0 0 24 24" fill="white"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg></div>
-            <div class="card-body">
-              <h3>Promotion Pépinière</h3>
-              <p>Jusqu'à -30% sur une sélection d'arbustes et de plantes de haie pour vos projets d'aménagement.</p>
-              <a href="boutique.html" class="btn btn-primary">Voir les offres</a>
-            </div>
-          </div>
-          <div class="card reveal reveal-delay-3">
-            <div class="card-img-placeholder"><svg width="80" height="80" viewBox="0 0 24 24" fill="white"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg></div>
-            <div class="card-body">
-              <h3>Programme Chlorophylle</h3>
-              <p>Le programme des soirées Chlorophylle Night by Xav est disponible. Réservez vos places !</p>
-              <a href="evenements.html" class="btn btn-primary">Voir le programme</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-controls">
-          <button class="carousel-btn" id="prevBtn">&#8592;</button>
-          <div class="carousel-dots" id="carouselDots"></div>
-          <button class="carousel-btn" id="nextBtn">&#8594;</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Catégories vedettes -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2>Explorez notre pépinière</h2>
-        <p>Des milliers de plantes organisées par famille pour faciliter votre recherche.</p>
-      </div>
-      <div class="grid-4">
-        <a href="pepiniere.html" class="category-card reveal reveal-delay-1">
-          <div class="category-card-img" style="background:#e8f5e9">🌳</div>
-          <div class="category-card-body"><h3>Arbres</h3><p>Fruitiers & ornementaux</p></div>
-        </a>
-        <a href="pepiniere.html" class="category-card reveal reveal-delay-2">
-          <div class="category-card-img" style="background:#f3e5f5">🌸</div>
-          <div class="category-card-body"><h3>Vivaces</h3><p>Fleurs & couvre-sols</p></div>
-        </a>
-        <a href="pepiniere.html" class="category-card reveal reveal-delay-3">
-          <div class="category-card-img" style="background:#fff8e1">🥦</div>
-          <div class="category-card-body"><h3>Potager</h3><p>Légumes & herbes</p></div>
-        </a>
-        <a href="pepiniere.html" class="category-card reveal">
-          <div class="category-card-img" style="background:#e0f2f1">🌿</div>
-          <div class="category-card-body"><h3>Arbustes</h3><p>Haies & bordures</p></div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Event teaser -->
-  <section class="section">
-    <div class="container">
-      <div class="event-teaser reveal">
-        <div class="event-teaser-content">
-          <h2>Chlorophylle Night by Xav</h2>
-          <p>Des soirées uniques au cœur de la nature. Musique, lumières et végétaux pour une expérience sensorielle inoubliable. De nouvelles dates à venir bientôt.</p>
-        </div>
-        <div class="event-teaser-action">
-          <a href="evenements.html" class="btn btn-white">Voir les événements</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script src="js/components.js"></script>
-  <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agri-Garden — Pépinière & Plantes en Belgique</title>
+    <meta name="description" content="Agri-Garden, votre pépinière en Belgique. Plantes, arbres, boutique en ligne et événements Chlorophylle Night." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
