@@ -31,7 +31,7 @@ export default function Footer() {
             <ul>
               <li><a href="tel:+32494363674">+32 494 36 36 74</a></li>
               <li><a href="mailto:info@agri-garden.be">info@agri-garden.be</a></li>
-              <li><Link to="/contact">Rue de la Pépinière 1<br />1000 Bruxelles</Link></li>
+              <li><Link to="/contact">Rue de la Soye 6<br />5190 Spy</Link></li>
             </ul>
           </div>
         </div>
