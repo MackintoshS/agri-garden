@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
+import heroImage from '../assets/cropped-cropped-pub_pepiniere.jpeg'
 
 const CARDS = [
   {
@@ -61,11 +62,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual">
-          <div className="hero-visual-placeholder">
-            <svg width="200" height="200" viewBox="0 0 24 24" fill="white">
-              <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 2-8 2 1-2 4.33-4 7-4-1 4-6 7-11 7 0-.5-.05-1-.12-1.5C9.8 4.5 14.44 0 21 0c-.37 1.84-1.59 6.11-4 8z" />
-            </svg>
-          </div>
+          <img src={heroImage} alt="Agri-Garden Pépinière" className="hero-image" />
         </div>
       </section>
 
