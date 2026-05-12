@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Contact</h4>
             <ul>
-              <li><a href="tel:+3200000000">+32 (0)0 000 00 00</a></li>
+              <li><a href="tel:+32494363674">+32 494 36 36 74</a></li>
               <li><a href="mailto:info@agri-garden.be">info@agri-garden.be</a></li>
               <li><Link to="/contact">Rue de la Pépinière 1<br />1000 Bruxelles</Link></li>
             </ul>
